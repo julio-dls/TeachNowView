@@ -1,0 +1,603 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+  <title>TeachNow</title>
+
+
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+  <link rel="stylesheet" href="css/bootstrap-datepicker.min.css">
+  <link rel="stylesheet" href="css/bootstrap.css">
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/main.css">
+
+  <style media="screen">
+    html,
+    body {
+      height: 100%;
+      margin: 0;
+      padding: 0;
+    }
+
+    .container-fluid {
+      background-color: #ffffff;
+    }
+
+    h2 {
+      text-align: left;
+      font-size: 21px !important;
+      color: #333;
+      border-top: 1px solid #ddd;
+      border-bottom: 1px solid #ddd;
+      margin: 0 !important;
+      padding: 10px 20px !important;
+    }
+
+    .main-wrapper {
+      margin: 0 auto;
+      margin-top: 6rem;
+      border: 1px solid #000;
+    }
+
+    .form_alineado {
+      margin-left: 20%;
+      padding: 30px 0;
+    }
+
+    .form_line {
+      max-width: 40%;
+    }
+
+    .label_alineado {
+      text-align: right;
+    }
+
+    #pconducir td {
+      padding: 0;
+      width: 71px;
+    }
+
+    .contador p {
+      text-align: right;
+    }
+
+    .form_full {
+      width: 91% !important;
+      float: left;
+      margin-top: 8px;
+    }
+
+    textarea {
+      padding: 6px 12px;
+      resize: none;
+    }
+
+    /* Small devices (tablets, 768px and medium devices (desktops, 992px) */
+
+    @media (max-width: 768px) and (max-width: 992px) {
+      .label_alineado {
+        text-align: left;
+      }
+      .form_alineado {
+        margin-left: 0;
+        padding: 6px;
+      }
+    }
+
+    .centrar_btn {
+      justify-content: center;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="main-wrapper">
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-md-12">
+          <!-- bg-success -->
+          <h2>Datos personales</h2>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-8 form_alineado">
+          <form>
+            <div class="form-group row">
+              <div class="col-md-2 label_alineado">
+                <label for="nombre" class=" col-form-label">Nombre</label>
+              </div>
+              <div class="col-md-10">
+                <input type="text" class="form-control" id="nombre" placeholder="nombre">
+              </div>
+            </div>
+            <div class="form-group row">
+              <div class="col-md-2 label_alineado">
+                <label for="apellido" class="col-form-label">Apellido</label>
+              </div>
+              <div class="col-md-10">
+                <input type="text" class="form-control" id="apellido" placeholder="apellido">
+              </div>
+            </div>
+            <div class="form-group row">
+              <div class="col-md-2 label_alineado">
+                <label for="identificación" class="col-form-label">Tipo de identificación<span class="glyphicon glyphicon-search" aria-hidden="true"></span></label>
+              </div>
+              <div class="col-md-4">
+                <select class="form-control mb-2 mr-sm-2" id="dni"><option value="0">Selecciona</option><option value="1">Pasaporte</option><option value="2">Libreta Cívica</option><option value="3">Cédula de Identidad</option><option value="4">Libreta de Enrolamiento</option><option value="5" selected >D.N.I</option></select>
+              </div>
+              <div class="col-md-6">
+                <input type="text" class="form-control mb-2 mr-sm-2" id="dni" placeholder="">
+              </div>
+            </div>
+            <div class="form-group row">
+              <div class="col-md-2 label_alineado">
+                <label for="apellido" class=" col-form-label">Fecha de nacimiento</label>
+              </div>
+              <div class="form-group">
+                <div class="col-md-10">
+                  <div class='input-group date' id='datepicker'>
+                    <input class="form-control" />
+                    <span class="input-group-addon"><i class="fas fa-calendar-alt"></i></span>
+                    </span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="form-group row">
+              <div class="col-md-2 label_alineado">
+                <div class="form-check-inline">
+                  <label for="chesexocked" class="form-check-label"> Género <span class="glyphicon glyphicon-asterisk" aria-hidden="true"></span></label>
+                </div>
+              </div>
+              <div class="col-md-10">
+                <div class="form-check-inline">
+                  <label class="form-check-label">
+                    <input type="radio" class="form-check-input" name="optradio"> Hombre
+                  </label>
+                </div>
+                <div class="form-check-inline">
+                  <label class="form-check-label">
+                    <input type="radio" class="form-check-input" name="optradio"> Mujer
+                  </label>
+                </div>
+              </div>
+            </div>
+            <div class="form-group row">
+              <div class="col-md-2 label_alineado">
+                <label for="estadoCivil" class=" col-form-label">Estado Civil<span class="glyphicon glyphicon-asterisk" aria-hidden="true"></span></label>
+              </div>
+              <div class="col-sm-10">
+                <select class="form-control mb-2 mr-sm-2" id="estadoCivil" class="cm-12" name="DLec"><option value="0">Estado Civil</option><option value="1" selected >Soltero(a)</option><option value="2">Casado(a)</option><option value="3">Separado(a)/Divorcia</option><option value="4">Viudo(a)</option><option value="5">Unión libre</option></select>
+              </div>
+            </div>
+            <div class="form-group row">
+              <div class="col-md-2 label_alineado">
+                <label for="apellido" class=" col-form-label">Teléfono<span class="glyphicon glyphicon-asterisk" aria-hidden="true"></span></label>
+              </div>
+              <div class="col-md-5">
+                <select class="form-control mb-2 mr-sm-2" id="estadoCivil" class="cm-12" name="DLec">Selecciona</option><option value="1" selected >Celular</option><option value="2">Fijo</option><option value="3">Oficina</option></select>
+              </div>
+              <div class="col-sm-2">
+                <input type="text" class="form-control" id="apellido" placeholder="">
+              </div>
+              <div class="col-md-3">
+                <input type="text" class="form-control" id="apellido" placeholder="">
+              </div>
+            </div>
+            <div class="form-group row">
+              <div class="col-md-2 label_alineado">
+                <label for="apellido" class=" col-form-label">Teléfono 2 <span class="glyphicon glyphicon-asterisk" aria-hidden="true"></span></label>
+              </div>
+              <div class="col-md-5">
+                <select class="form-control mb-2 mr-sm-2" id="estadoCivil" class="cm-12" name="DLec">Selecciona</option><option value="1" selected >Celular</option><option value="2">Fijo</option><option value="3">Oficina</option></select>
+              </div>
+              <div class="col-sm-2">
+                <input type="text" class="form-control" id="apellido" placeholder="">
+              </div>
+              <div class="col-md-3">
+                <input type="text" class="form-control" id="apellido" placeholder="">
+              </div>
+            </div>
+            <div class="form-group row">
+              <div class="col-md-2 label_alineado">
+                <label for="nombre" class=" col-form-label">Skype</label>
+              </div>
+              <div class="col-md-10 col-sm-10">
+                <input type="text" class="form-control" id="nombre" placeholder="nombre">
+              </div>
+            </div>
+            <div class="form-group row">
+              <div class="col-md-2 label_alineado">
+                <label for="estadoCivil" class=" col-form-label">País<span class="glyphicon glyphicon-asterisk" aria-hidden="true"></span></label>
+              </div>
+              <div class="col-sm-10">
+                <select class="form-control mb-2 mr-sm-2" id="estadoCivil" class="cm-12" name="DLec"><option value="10" selected >Argentina</option><option value="21">Bolivia</option><option value="43">Chile</option><option value="48">Colombia</option><option value="54">Costa Rica</option><option value="56">Cuba</option><option value="63">Ecuador</option><option value="64">El Salvador</option><option value="209">España</option><option value="93">Guatemala</option><option value="99">Honduras</option><option value="139">México</option><option value="159">Nicaragua</option><option value="171">Panamá</option><option value="173">Paraguay</option><option value="174">Perú</option><option value="181">Puerto Rico</option><option value="62">República Dominicana</option><option value="243">Uruguay</option><option value="245">Venezuela</option><option value="1">Afganistán</option><option value="2">Albania</option><option value="84">Alemania</option><option value="6">Andorra</option><option value="7">Angola</option><option value="190">Anguila</option><option value="3">Antártida</option><option value="8">Antigua y Barbuda</option><option value="197">Arabia Saudita</option><option value="4">Argelia</option><option value="16">Armenia</option><option value="153">Aruba</option><option value="11">Australia</option><option value="12">Austria</option><option value="9">Azerbaiyán</option><option value="13">Bahamas</option><option value="15">Bangladés</option><option value="17">Barbados</option><option value="14">Baréin</option><option value="18">Bélgica</option><option value="26">Belice</option><option value="59">Benín</option><option value="19">Bermudas</option><option value="34">Bielorrusia</option><option value="155">Bonaire, San Eustaquio y Saba</option><option value="22">Bosnia y Herzegovina</option><option value="23">Botsuana</option><option value="25">Brasil</option><option value="30">Brunéi Darussalam</option><option value="31">Bulgaria</option><option value="242">Burkina Faso</option><option value="33">Burundi</option><option value="20">Bután</option><option value="38">Cabo Verde</option><option value="35">Camboya</option><option value="36">Camerún</option><option value="37">Canadá</option><option value="42">Chad</option><option value="44">China</option><option value="57">Chipre</option><option value="49">Comoras</option><option value="51">Congo</option><option value="52">Congo (República Democrática)</option><option value="117">Corea</option><option value="116">Corea (República Democrática Popular)</option><option value="110">Costa de Marfil</option><option value="55">Croacia</option><option value="152">Curaçao</option><option value="60">Dinamarca</option><option value="61">Dominica</option><option value="234">Egipto</option><option value="225">Emiratos Árabes Unidos</option><option value="67">Eritrea</option><option value="203">Eslovaquia</option><option value="205">Eslovenia</option><option value="240">Estados Unidos</option><option value="68">Estonia</option><option value="66">Etiopía</option><option value="175">Filipinas</option><option value="73">Finlandia</option><option value="72">Fiyi</option><option value="75">Francia</option><option value="80">Gabón</option><option value="82">Gambia</option><option value="81">Georgia</option><option value="71">Georgia del Sur y Las Islas Sandwich del Sur</option><option value="85">Ghana</option><option value="86">Gibraltar</option><option value="90">Granada</option><option value="88">Grecia</option><option value="89">Groenlandia</option><option value="91">Guadalupe</option><option value="92">Guam</option><option value="76">Guayana Francesa</option><option value="236">Guernsey</option><option value="94">Guinea</option><option value="65">Guinea Ecuatorial</option><option value="179">Guinea-Bisáu</option><option value="95">Guyana</option><option value="96">Haití</option><option value="100">Hong Kong</option><option value="101">Hungría</option><option value="103">India</option><option value="104">Indonesia</option><option value="106">Irak</option><option value="105">Irán</option><option value="107">Irlanda</option><option value="24">Isla Bouvet</option><option value="238">Isla de Man</option><option value="46">Isla de Navidad</option><option value="97">Isla Heard e Islas Mcdonald</option><option value="163">Isla Norfolk</option><option value="102">Islandia</option><option value="74">Islas Åland</option><option value="39">Islas Caimán</option><option value="47">Islas Cocos (Keeling)</option><option value="53">Islas Cook</option><option value="69">Islas Feroe</option><option value="165">Islas Marianas del Norte</option><option value="168">Islas Marshall</option><option value="28">Islas Salomón</option><option value="229">Islas Turcas y Caicos</option><option value="166">Islas Ultramarinas Menores de Estados Unidos</option><option value="29">Islas Vírgenes (Británicas)</option><option value="241">Islas Vírgenes (Ee.Uu.)</option><option value="108">Israel</option><option value="109">Italia</option><option value="111">Jamaica</option><option value="112">Japón</option><option value="237">Jersey</option><option value="114">Jordania</option><option value="113">Kazajistán</option><option value="115">Kenia</option><option value="119">Kirguistán</option><option value="87">Kiribati</option><option value="118">Kuwait</option><option value="120">Lao</option><option value="122">Lesoto</option><option value="123">Letonia</option><option value="121">Líbano</option><option value="124">Liberia</option><option value="125">Libia</option><option value="126">Liechtenstein</option><option value="127">Lituania</option><option value="128">Luxemburgo</option><option value="129">Macao</option><option value="233">Macedonia</option><option value="130">Madagascar</option><option value="132">Malasia</option><option value="131">Malaui</option><option value="133">Maldivas</option><option value="134">Malí</option><option value="135">Malta</option><option value="70">Malvinas</option><option value="145">Marruecos</option><option value="136">Martinica</option><option value="138">Mauricio</option><option value="137">Mauritania</option><option value="50">Mayotte</option><option value="167">Micronesia</option><option value="142">Moldavia</option><option value="140">Mónaco</option><option value="141">Mongolia</option><option value="143">Montenegro</option><option value="144">Montserrat</option><option value="146">Mozambique</option><option value="32">Myanmar</option><option value="148">Namibia</option><option value="149">Nauru</option><option value="150">Nepal</option><option value="160">Níger</option><option value="161">Nigeria</option><option value="162">Niue</option><option value="164">Noruega</option><option value="156">Nueva Caledonia</option><option value="158">Nueva Zelanda</option><option value="147">Omán</option><option value="151">Países Bajos</option><option value="170">Pakistán</option><option value="169">Palaos</option><option value="83">Palestina</option><option value="172">Papúa Nueva Guinea</option><option value="176">Pitcairn</option><option value="77">Polinesia Francesa</option><option value="177">Polonia</option><option value="178">Portugal</option><option value="182">Qatar</option><option value="235">Reino Unido</option><option value="40">República Centroafricana</option><option value="58">República Checa</option><option value="183">Reunión</option><option value="186">Ruanda</option><option value="184">Rumania</option><option value="185">Rusia</option><option value="212">Sahara Occidental</option><option value="247">Samoa</option><option value="5">Samoa Americana</option><option value="187">San Bartolomé</option><option value="189">San Cristóbal y Nieves</option><option value="195">San Marino</option><option value="192">San Martín</option><option value="193">San Pedro y Miquelón</option><option value="194">San Vicente y Las Granadinas</option><option value="188">Santa Helena, Ascensión y Tristán de Acuña</option><option value="191">Santa Lucía</option><option value="196">Santo Tomé y Príncipe</option><option value="198">Senegal</option><option value="199">Serbia</option><option value="200">Seychelles</option><option value="201">Sierra Leona</option><option value="202">Singapur</option><option value="154">Sint Maarten</option><option value="218">Siria</option><option value="206">Somalia</option><option value="41">Sri Lanka</option><option value="215">Suazilandia</option><option value="207">Sudáfrica</option><option value="211">Sudán</option><option value="210">Sudán del Sur</option><option value="216">Suecia</option><option value="217">Suiza</option><option value="213">Surinam</option><option value="214">Svalbard y Jan Mayen</option><option value="220">Tailandia</option><option value="45">Taiwán</option><option value="239">Tanzania</option><option value="219">Tayikistán</option><option value="27">Territorio Británico del Océano Índico</option><option value="78">Territorios Australes Franceses</option><option value="180">Timor-Leste</option><option value="221">Togo</option><option value="222">Tokelau</option><option value="223">Tonga</option><option value="224">Trinidad y Tobago</option><option value="226">Túnez</option><option value="228">Turkmenistán</option><option value="227">Turquía</option><option value="230">Tuvalu</option><option value="232">Ucrania</option><option value="231">Uganda</option><option value="244">Uzbekistán</option><option value="157">Vanuatu</option><option value="98">Vaticano</option><option value="204">Vietnam</option><option value="246">Wallis y Futuna</option><option value="248">Yemen</option><option value="79">Yibuti</option><option value="249">Zambia</option><option value="208">Zimbabue</option></select>
+              </div>
+            </div>
+            <div class="form-group row">
+              <div class="col-md-2 label_alineado">
+                <label for="estadoCivil" class=" col-form-label">Región<span class="glyphicon glyphicon-asterisk" aria-hidden="true"></span></label>
+              </div>
+              <div class="col-sm-10">
+                <select class="form-control mb-2 mr-sm-2" id="estadoCivil" class="cm-12" name="DLec"><option value="0">Departamento</option><option value="3" selected >Capital Federal</option><option value="2">Buenos Aires</option><option value="26">Buenos Aires-GBA</option><option value="4">Catamarca</option><option value="5">Córdoba</option><option value="6">Corrientes</option><option value="7">Chaco</option><option value="8">Chubut</option><option value="9">Entre Ríos</option><option value="10">Formosa</option><option value="11">Jujuy</option><option value="12">La Pampa</option><option value="13">La Rioja</option><option value="14">Mendoza</option><option value="15">Misiones</option><option value="16">Neuquén</option><option value="17">Río Negro</option><option value="18">Salta</option><option value="19">San Juan</option><option value="20">San Luis</option><option value="21">Santa Cruz</option><option value="22">Santa Fe</option><option value="23">Santiago del Estero</option><option value="24">Tierra del Fuego</option><option value="25">Tucumán</option><option value="1">Extranjero</option></select>
+              </div>
+            </div>
+            <div class="form-group row">
+              <div class="col-md-2 label_alineado">
+                <label for="estadoCivil" class=" col-form-label">Ciudad<span class="glyphicon glyphicon-asterisk" aria-hidden="true"></span></label>
+              </div>
+              <div class="col-sm-10">
+                <select class="form-control mb-2 mr-sm-2" id="estadoCivil" class="cm-12" name="DLec"><option value="0">Ciudad</option><option value="143">Agronomía</option><option value="144">Almagro</option><option value="145">Balvanera</option><option value="146">Barracas</option><option value="147">Belgrano</option><option value="148">Boca</option><option value="149">Boedo</option><option value="150">Caballito</option><option value="151">Chacarita</option><option value="152">Coghlan</option><option value="153">Colegiales</option><option value="154">Constitución</option><option value="155">Flores</option><option value="156">Floresta</option><option value="157">La Paternal</option><option value="158">Liniers</option><option value="159">Mataderos</option><option value="160">Monserrat</option><option value="161">Monte Castro</option><option value="162">Nueva Pompeya</option><option value="163">Núñez</option><option value="164">Palermo</option><option value="165">Parque Avellaneda</option><option value="166">Parque Chacabuco</option><option value="167">Parque Chas</option><option value="168">Parque Patricios</option><option value="169">Puerto Madero</option><option value="170" selected >Recoleta</option><option value="171">Retiro</option><option value="172">Saavedra</option><option value="173">San Cristóbal</option><option value="174">San Nicolás</option><option value="175">San Telmo</option><option value="176">Vélez Sársfield</option><option value="177">Versalles</option><option value="178">Villa Crespo</option><option value="179">Villa del Parque</option><option value="180">Villa Devoto</option><option value="181">Villa Gral. Mitre</option><option value="182">Villa Lugano</option><option value="183">Villa Luro</option><option value="184">Villa Ortúzar</option><option value="185">Villa Pueyrredón</option><option value="186">Villa Real</option><option value="187">Villa Riachuelo</option><option value="188">Villa Santa Rita</option><option value="189">Villa Soldati</option><option value="190">Villa Urquiza</option></select>
+              </div>
+            </div>
+            <div class="form-group row">
+              <div class="col-md-2 label_alineado">
+                <label for="nombre" class=" col-form-label">Codigo Posatal</label>
+              </div>
+              <div class="col-md-10 col-sm-10">
+                <input type="text" class="form-control" id="nombre" placeholder="Codigo Posatal">
+              </div>
+            </div>
+            <div class="form-group row">
+              <div class="col-md-2 label_alineado">
+                <label for="nombre" class=" col-form-label">Dirección</label>
+              </div>
+              <div class="col-md-10 col-sm-10">
+                <input type="text" class="form-control" id="nombre" placeholder="Dirección">
+              </div>
+            </div>
+            <div class="form-group row">
+              <div class="col-md-2 label_alineado">
+                <label for="nacionalidad" class=" col-form-label">Nacionalidad<span class="glyphicon glyphicon-asterisk" aria-hidden="true"></span></label>
+              </div>
+              <div class="col-sm-10">
+                <select class="form-control mb-2 mr-sm-2" id="nacionalidad" class="cm-12" name="DLec"><option value="0">Nacionalidad</option><option value="10" selected >Argentina</option><option value="21">Bolivia</option><option value="43">Chile</option><option value="48">Colombia</option><option value="54">Costa Rica</option><option value="56">Cuba</option><option value="63">Ecuador</option><option value="64">El Salvador</option><option value="209">España</option><option value="93">Guatemala</option><option value="99">Honduras</option><option value="139">México</option><option value="159">Nicaragua</option><option value="171">Panamá</option><option value="173">Paraguay</option><option value="174">Perú</option><option value="181">Puerto Rico</option><option value="62">República Dominicana</option><option value="243">Uruguay</option><option value="245">Venezuela</option><option value="1">Afganistán</option><option value="2">Albania</option><option value="84">Alemania</option><option value="6">Andorra</option><option value="7">Angola</option><option value="190">Anguila</option><option value="3">Antártida</option><option value="8">Antigua y Barbuda</option><option value="197">Arabia Saudita</option><option value="4">Argelia</option><option value="16">Armenia</option><option value="153">Aruba</option><option value="11">Australia</option><option value="12">Austria</option><option value="9">Azerbaiyán</option><option value="13">Bahamas</option><option value="15">Bangladés</option><option value="17">Barbados</option><option value="14">Baréin</option><option value="18">Bélgica</option><option value="26">Belice</option><option value="59">Benín</option><option value="19">Bermudas</option><option value="34">Bielorrusia</option><option value="155">Bonaire, San Eustaquio y Saba</option><option value="22">Bosnia y Herzegovina</option><option value="23">Botsuana</option><option value="25">Brasil</option><option value="30">Brunéi Darussalam</option><option value="31">Bulgaria</option><option value="242">Burkina Faso</option><option value="33">Burundi</option><option value="20">Bután</option><option value="38">Cabo Verde</option><option value="35">Camboya</option><option value="36">Camerún</option><option value="37">Canadá</option><option value="42">Chad</option><option value="44">China</option><option value="57">Chipre</option><option value="49">Comoras</option><option value="51">Congo</option><option value="52">Congo (República Democrática)</option><option value="117">Corea</option><option value="116">Corea (República Democrática Popular)</option><option value="110">Costa de Marfil</option><option value="55">Croacia</option><option value="152">Curaçao</option><option value="60">Dinamarca</option><option value="61">Dominica</option><option value="234">Egipto</option><option value="225">Emiratos Árabes Unidos</option><option value="67">Eritrea</option><option value="203">Eslovaquia</option><option value="205">Eslovenia</option><option value="240">Estados Unidos</option><option value="68">Estonia</option><option value="66">Etiopía</option><option value="175">Filipinas</option><option value="73">Finlandia</option><option value="72">Fiyi</option><option value="75">Francia</option><option value="80">Gabón</option><option value="82">Gambia</option><option value="81">Georgia</option><option value="71">Georgia del Sur y Las Islas Sandwich del Sur</option><option value="85">Ghana</option><option value="86">Gibraltar</option><option value="90">Granada</option><option value="88">Grecia</option><option value="89">Groenlandia</option><option value="91">Guadalupe</option><option value="92">Guam</option><option value="76">Guayana Francesa</option><option value="236">Guernsey</option><option value="94">Guinea</option><option value="65">Guinea Ecuatorial</option><option value="179">Guinea-Bisáu</option><option value="95">Guyana</option><option value="96">Haití</option><option value="100">Hong Kong</option><option value="101">Hungría</option><option value="103">India</option><option value="104">Indonesia</option><option value="106">Irak</option><option value="105">Irán</option><option value="107">Irlanda</option><option value="24">Isla Bouvet</option><option value="238">Isla de Man</option><option value="46">Isla de Navidad</option><option value="97">Isla Heard e Islas Mcdonald</option><option value="163">Isla Norfolk</option><option value="102">Islandia</option><option value="74">Islas Åland</option><option value="39">Islas Caimán</option><option value="47">Islas Cocos (Keeling)</option><option value="53">Islas Cook</option><option value="69">Islas Feroe</option><option value="165">Islas Marianas del Norte</option><option value="168">Islas Marshall</option><option value="28">Islas Salomón</option><option value="229">Islas Turcas y Caicos</option><option value="166">Islas Ultramarinas Menores de Estados Unidos</option><option value="29">Islas Vírgenes (Británicas)</option><option value="241">Islas Vírgenes (Ee.Uu.)</option><option value="108">Israel</option><option value="109">Italia</option><option value="111">Jamaica</option><option value="112">Japón</option><option value="237">Jersey</option><option value="114">Jordania</option><option value="113">Kazajistán</option><option value="115">Kenia</option><option value="119">Kirguistán</option><option value="87">Kiribati</option><option value="118">Kuwait</option><option value="120">Lao</option><option value="122">Lesoto</option><option value="123">Letonia</option><option value="121">Líbano</option><option value="124">Liberia</option><option value="125">Libia</option><option value="126">Liechtenstein</option><option value="127">Lituania</option><option value="128">Luxemburgo</option><option value="129">Macao</option><option value="233">Macedonia</option><option value="130">Madagascar</option><option value="132">Malasia</option><option value="131">Malaui</option><option value="133">Maldivas</option><option value="134">Malí</option><option value="135">Malta</option><option value="70">Malvinas</option><option value="145">Marruecos</option><option value="136">Martinica</option><option value="138">Mauricio</option><option value="137">Mauritania</option><option value="50">Mayotte</option><option value="167">Micronesia</option><option value="142">Moldavia</option><option value="140">Mónaco</option><option value="141">Mongolia</option><option value="143">Montenegro</option><option value="144">Montserrat</option><option value="146">Mozambique</option><option value="32">Myanmar</option><option value="148">Namibia</option><option value="149">Nauru</option><option value="150">Nepal</option><option value="160">Níger</option><option value="161">Nigeria</option><option value="162">Niue</option><option value="164">Noruega</option><option value="156">Nueva Caledonia</option><option value="158">Nueva Zelanda</option><option value="147">Omán</option><option value="151">Países Bajos</option><option value="170">Pakistán</option><option value="169">Palaos</option><option value="83">Palestina</option><option value="172">Papúa Nueva Guinea</option><option value="176">Pitcairn</option><option value="77">Polinesia Francesa</option><option value="177">Polonia</option><option value="178">Portugal</option><option value="182">Qatar</option><option value="235">Reino Unido</option><option value="40">República Centroafricana</option><option value="58">República Checa</option><option value="183">Reunión</option><option value="186">Ruanda</option><option value="184">Rumania</option><option value="185">Rusia</option><option value="212">Sahara Occidental</option><option value="247">Samoa</option><option value="5">Samoa Americana</option><option value="187">San Bartolomé</option><option value="189">San Cristóbal y Nieves</option><option value="195">San Marino</option><option value="192">San Martín</option><option value="193">San Pedro y Miquelón</option><option value="194">San Vicente y Las Granadinas</option><option value="188">Santa Helena, Ascensión y Tristán de Acuña</option><option value="191">Santa Lucía</option><option value="196">Santo Tomé y Príncipe</option><option value="198">Senegal</option><option value="199">Serbia</option><option value="200">Seychelles</option><option value="201">Sierra Leona</option><option value="202">Singapur</option><option value="154">Sint Maarten</option><option value="218">Siria</option><option value="206">Somalia</option><option value="41">Sri Lanka</option><option value="215">Suazilandia</option><option value="207">Sudáfrica</option><option value="211">Sudán</option><option value="210">Sudán del Sur</option><option value="216">Suecia</option><option value="217">Suiza</option><option value="213">Surinam</option><option value="214">Svalbard y Jan Mayen</option><option value="220">Tailandia</option><option value="45">Taiwán</option><option value="239">Tanzania</option><option value="219">Tayikistán</option><option value="27">Territorio Británico del Océano Índico</option><option value="78">Territorios Australes Franceses</option><option value="180">Timor-Leste</option><option value="221">Togo</option><option value="222">Tokelau</option><option value="223">Tonga</option><option value="224">Trinidad y Tobago</option><option value="226">Túnez</option><option value="228">Turkmenistán</option><option value="227">Turquía</option><option value="230">Tuvalu</option><option value="232">Ucrania</option><option value="231">Uganda</option><option value="244">Uzbekistán</option><option value="157">Vanuatu</option><option value="98">Vaticano</option><option value="204">Vietnam</option><option value="246">Wallis y Futuna</option><option value="248">Yemen</option><option value="79">Yibuti</option><option value="249">Zambia</option><option value="208">Zimbabue</option></select>
+              </div>
+            </div>
+
+            <div class="form-group row">
+              <div class="col-md-2 label_alineado">
+                <label for="licenciaConducir" class=" col-form-label">Licencia de conducir<span class="glyphicon glyphicon-asterisk" aria-hidden="true"></span></label>
+              </div>
+              <div class="col-md-10 col-sm-10">
+                <select class="form-control mb-2 mr-sm-2" id="licenciaConducir" class="cm-12" name="DLec"> <option value="0"></option> <option value="1" selected >A1</option> <option value="2">A2</option> <option value="3">A2.1</option> <option value="4">A2.2</option> <option value="5">A3</option> <option value="6">B1</option> <option value="7">B2</option> <option value="8">C2</option> <option value="9">D1</option> <option value="10">D2</option> <option value="11">E1</option> <option value="12">E2</option> <option value="13">F</option> <option value="14">G1</option> <option value="15">G2</option> <option value="16">No tengo</option></select>
+              </div>
+            </div>
+
+            <div class="form-group row">
+              <div class="col-md-2 label_alineado">
+                <div class="form-check-inline">
+                  <label for="vehiculo" class="form-check-label"> Disponés de vehículo propio <span class="glyphicon glyphicon-asterisk" aria-hidden="true"></span></label>
+                </div>
+              </div>
+              <div class="col-md-10">
+                <div class="form-check-inline">
+                  <label class="form-check-label">
+                    <input type="radio" class="form-check-input" name="vehiculo"> Sí
+                  </label>
+                </div>
+                <div class="form-check-inline">
+                  <label class="form-check-label">
+                    <input type="radio" class="form-check-input" name="vehiculo"> No
+                  </label>
+                </div>
+              </div>
+            </div>
+            <div class="form-group row">
+              <div class="col-md-2 label_alineado">
+                <div class="form-check-inline">
+                  <label for="vehiculo" class="form-check-label"> Discapacidad <span class="glyphicon glyphicon-asterisk" aria-hidden="true"></span></label>
+                </div>
+              </div>
+              <div class="col-md-10">
+                <div class="form-check-inline">
+                  <label class="form-check-label">
+                    <input type="radio" class="form-check-input" name="vehiculo">
+                  </label>
+                </div>
+              </div>
+            </div>
+            <div class="form-group row">
+              <div class="col-md-2 label_alineado">
+                <div class="form-check-inline">
+                  <label for="vehiculo" class="form-check-label"> Insertá tu foto <span class="glyphicon glyphicon-asterisk" aria-hidden="true"></span></label>
+                </div>
+              </div>
+              <div class="col-md-10">
+                <a href="#" id="up-img">
+                  <div class="form_foto">
+                    <div title="Subí tu foto" class="foto_camara"><span class="icon camara"></span></div>
+                    <img id="ContainerGeneralOverWrite_ContainerGeneral_fotocv" src="https://ii.ct-stc.com/5/logos/candidates/2017/03/12/cocinero-profesional-5E0EF582E32893F2150711thumbnail.jpeg" />
+                    <span class="foto_candidato"></span>
+                  </div>
+                </a>
+              </div>
+          </form>
+          </div>
+        </div>
+        <!-- col-md-8 -->
+      </div>
+      <!-- row -->
+
+      <!-- Perfil profesional -->
+      <div class="row">
+        <div class="col">
+          <h2>Perfil profesional</h2>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-12 form_full">
+          <form>
+            <div class="col-md-12">
+              <label for="nombre" class=" col-form-label">Cargo o título breve del currículum</label>
+            </div>
+            <div class="col-md-12">
+              <input type="text" class="form-control" id="nombre" placeholder="nombre">
+            </div>
+
+            <div class="col-md-12">
+              <label for="Cargo" class="col-form-label">Escribí tus conocimientos</label>
+            </div>
+
+            <div class="col-md-12">
+              <textarea type="text" class="form-control" id="apellido" placeholder="" rows="5" cols="10" resize="none"></textarea>
+              <div class="contador" id="contadordescperfil">
+                <p>(máximo 500 carácteres)</p>
+              </div>
+            </div>
+          </form>
+        </div>
+        <!-- col-md-8 -->
+      </div>
+      <!-- row -->
+      <!-- fin Perfil profesional -->
+
+      <!-- Experiencias profesionalesl -->
+      <div class="row">
+        <div class="col">
+          <h2>Experiencias profesionales</h2>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-8 form_alineado">
+          <form>
+            <div class="form-group row">
+              <div class="form-check-inline">
+                <label for="vehiculo" class="form-check-label"> No tengo ninguna experiencia <span class="glyphicon glyphicon-asterisk" aria-hidden="true"></span></label>
+              </div>
+              <div class="form-check-inline">
+                <label class="form-check-label">
+                <input type="radio" class="form-check-input" name="vehiculo">
+              </label>
+              </div>
+            </div>
+
+          </form>
+        </div>
+        <!-- col-md-8 -->
+      </div>
+      <!-- row -->
+      <!-- fin Experiencias profesionales -->
+
+      <!-- Formación -->
+      <div class="row">
+        <div class="col">
+          <h2>Formación</h2>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-8 form_alineado">
+          <form>
+            <div class="form-group row">
+              <div class="col-md-2 label_alineado">
+                <label for="nombre" class=" col-form-label">Centro educativo</label>
+              </div>
+              <div class="col-md-10 col-sm-10">
+                <input type="text" class="form-control" id="nombre" placeholder="">
+              </div>
+            </div>
+            <div class="form-group row">
+              <div class="col-md-2 label_alineado">
+                <label for="estadoCivil" class=" col-form-label">Nivel de estudios<span class="glyphicon glyphicon-asterisk" aria-hidden="true"></span></label>
+              </div>
+              <div class="col-sm-10">
+                <select class="form-control mb-2 mr-sm-2" id="licenciaConducir" class="cm-12" name="DLec"> <option value="0">Nivel de estudios</option><option value="1">Primaria</option><option value="2">Secundaria</option><option value="3">Terciario</option><option value="4">Universitario</option><option value="5">Posgrado</option><option value="6">Master</option><option value="7">Doctorado</option></select>
+              </div>
+            </div>
+            <div class="form-group row">
+              <div class="col-md-2 label_alineado">
+                <label for="nombre" class=" col-form-label">Área de estudio</label>
+              </div>
+              <div class="col-md-10 col-sm-10">
+                <input type="text" class="form-control" id="nombre" placeholder="">
+              </div>
+            </div>
+            <div class="form-group row">
+              <div class="col-md-2 label_alineado">
+                <div class="form-check-inline">
+                  <label for="vehiculo" class="form-check-label"> Estado <span class="glyphicon glyphicon-asterisk" aria-hidden="true"></span></label>
+                </div>
+              </div>
+              <div class="col-md-10">
+                <div class="form-check-inline">
+                  <label class="form-check-label">
+                  <input type="radio" class="form-check-input" name="vehiculo"> Culminado
+                </label>
+                </div>
+                <div class="form-check-inline">
+                  <label class="form-check-label">
+                  <input type="radio" class="form-check-input" name="vehiculo"> Cursando
+                </label>
+                </div>
+                <div class="form-check-inline">
+                  <label class="form-check-label">
+                  <input type="radio" class="form-check-input" name="vehiculo"> Abandonado / Aplazado
+                </label>
+                </div>
+              </div>
+            </div>
+            <div class="form-group row">
+              <div class="col-md-2 label_alineado">
+                <label for="apellido" class=" col-form-label"> Periodo <span class="glyphicon glyphicon-asterisk" aria-hidden="true"></span></label>
+              </div>
+              <div class="col-md-2">
+                <select class="form-control mb-2 mr-sm-2" id=""><option value="0">Mes</option><option value="1">1</option><option value="2">2</option><option value="3">3</option><option value="4">4</option><option value="5">5</option><option value="6">6</option><option value="7">7</option><option value="8">8</option><option value="9">9</option><option value="10">10</option><option value="11">11</option><option value="12">12</option></select>
+              </div>
+              <div class="col-md-2">
+                <select class="form-control mb-2 mr-sm-2" id=""><option value="0">Año</option><!-- Años autoincremental con java --></select>
+              </div>
+              <div class="2">
+                <span class="glyphicon glyphicon-minus" aria-hidden="true"></span>
+              </div>
+              <div class="col-md-2">
+                <select class="form-control mb-2 mr-sm-2" id=""><option value="0">Mes</option><option value="1">1</option><option value="2">2</option><option value="3">3</option><option value="4">4</option><option value="5">5</option><option value="6">6</option><option value="7">7</option><option value="8">8</option><option value="9">9</option><option value="10">10</option><option value="11">11</option><option value="12">12</option></select>
+              </div>
+              <div class="col-md-2">
+                <select class="form-control mb-2 mr-sm-2" id=""><option value="0">Año</option><!-- Años autoincremental con java --></select>
+              </div>
+            </div>
+            <div class="form-group row centrar_btn">
+              <p>
+                <button type="button" class="btn btn-primary btn-lg">Large button</button>
+                <button type="button" class="btn btn-default btn-lg">Large button</button>
+              </p>
+            </div>
+          </form>
+        </div>
+        <!-- col-md-8 -->
+      </div>
+      <!-- row -->
+      <!-- Fin Formación -->
+
+      <!-- Idiomas -->
+      <div class="row">
+        <div class="col">
+          <h2>Idiomas</h2>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-8 form_alineado">
+          <form>
+            <div class="form-group row">
+              <div class="col-md-2 label_alineado">
+                <label for="identificación" class="col-form-label">Idiomas<span class="glyphicon glyphicon-search" aria-hidden="true"></span></label>
+              </div>
+              <div class="col-md-6">
+                <select class="form-control mb-2 mr-sm-2" id="licenciaConducir" class="cm-12" name="DLec">Idiomas</option></select>
+              </div>
+              <div class="col-md-4">
+                <select class="form-control mb-2 mr-sm-2" id="licenciaConducir" class="cm-12" name="DLec">Nivel</option><option value="1">Muy Básico
+              </option><option value="2">Básico
+              </option><option value="3">Intermedio
+              </option><option value="4">Avanzado
+              </option><option value="5">Nativo
+              </option></select>
+              </div>
+            </div>
+
+          </form>
+        </div>
+        <!-- col-md-8 -->
+      </div>
+      <!-- row -->
+      <!-- Fin Idiomas -->
+
+      <!-- Conocimientos informáticos -->
+      <div class="row">
+        <div class="col">
+          <h2>Conocimientos informáticos</h2>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-8 form_alineado">
+          <form>
+            <div class="form-group row">
+              <div class="col-md-2 label_alineado">
+                <label for="identificación" class="col-form-label">Programas informáticos<span class="glyphicon glyphicon-search" aria-hidden="true"></span></label>
+              </div>
+              <div class="col-md-6">
+                <select class="form-control mb-2 mr-sm-2" id="licenciaConducir" class="cm-12" name="DLec"><option value="0">Selecciona</option></select>
+              </div>
+              <div class="col-md-4">
+                <select class="form-control mb-2 mr-sm-2" id="licenciaConducir" class="cm-12" name="DLec"><option value="0">Nivel</option><option value="1">Usuario</option><option value="2">Avanzado</option><option value="3">Profesional</option><option value="4">Experto</option></select>
+              </div>
+            </div>
+
+          </form>
+        </div>
+        <!-- col-md-8 -->
+      </div>
+      <!-- row -->
+      <!-- Fin Conocimientos informáticos -->
+
+      <!-- Conocimientos y habilidades -->
+      <div class="row">
+        <div class="col">
+          <h2>Conocimientos y habilidades</h2>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-8 form_alineado">
+          <form>
+            <div class="col-md-12">
+              <label for="Cargo" class=" col-form-label">Escribí tus conocimientos</label>
+            </div>
+
+            <div class="col-md-12">
+              <textarea type="text" class="form-control" id="apellido" placeholder="" rows="5" cols="10" resize="none"></textarea>
+              <div class="contador" id="contadordescperfil">
+                <p>(máximo 500 carácteres)</p>
+              </div>
+            </div>
+
+          </form>
+        </div>
+        <!-- col-md-8 -->
+      </div>
+      <!-- row -->
+      <!-- Fin Conocimientos y habilidades -->
+
+      <!-- Adjuntar un CV -->
+      <div class="row">
+        <div class="col">
+          <h2>Adjuntar un CV</h2>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-8 form_alineado">
+          <form>
+            <div class="form-group row">
+              <div class="col-md-3 label_alineado">
+                <label for="nombre" class=" col-form-label">Curriculum Vitae</label>
+              </div>
+              <div class="col-md-9 col-sm-10">
+                <input type="file" class="form-control" id="nombre" placeholder="Dirección">
+              </div>
+            </div>
+            <div class="col-md-10">
+              <button type="button" class="btn btn-primary btn-lg btn-block">Enviar</button>
+            </div>
+          </form>
+        </div>
+        <!-- col-md-8 -->
+      </div>
+      <!-- row -->
+      <!-- Fin Adjuntar un CV -->
+    <foot>
+
+    </foot>
+
+    </div>
+    <!-- container -->
+    <script src="js/vendor/jquery-2.2.4.min.js"></script>
+    <script src="js/vendor/bootstrap.min.js"></script>
+    <script type="text/javascript" src="js/vendor/bootstrap-datepicker.min.js "></script>
+    <script src="js/js/datepicker.js"></script>
+
+</body>
+
+</html>
