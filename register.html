@@ -330,23 +330,27 @@
         </div>
       </div>
       <div class="row">
-        <div class="col-md-12 form_full">
+        <div class="col-md-8 form_alineado">
           <form>
-            <div class="col-md-12">
-              <label for="nombre" class=" col-form-label">Cargo o título breve del currículum</label>
-            </div>
-            <div class="col-md-12">
-              <input type="text" class="form-control" id="nombre" placeholder="nombre">
-            </div>
+            <div class="form-group">
+              <div class="form-group row">
+                <label for="exampleInputPassword1">Area de mayor dominio</label>
+                <input type="text" class="form-control" id="exampleInputPassword1" placeholder="Enter empresa">
+                <small id="emailHelp" class="form-text text-muted">Ejemplo: programador, admnistrador de servidores, maquetador web, etc</small>
+              </div>
+              <div class="form-group row">
+                <label for="#">Breve descripcion de las habilidades que mejor dominas </label>
+                <textarea type="text" class="form-control" id="apellido" placeholder="" rows="5" cols="10" resize="none"></textarea>
+                <div class="contador" id="contadordescperfil">
+                  <p>(máximo 500 carácteres)</p>
+                </div>
+              </div>
 
-            <div class="col-md-12">
-              <label for="Cargo" class="col-form-label">Escribí tus conocimientos</label>
-            </div>
-
-            <div class="col-md-12">
-              <textarea type="text" class="form-control" id="apellido" placeholder="" rows="5" cols="10" resize="none"></textarea>
-              <div class="contador" id="contadordescperfil">
-                <p>(máximo 500 carácteres)</p>
+              <div class="form-group row centrar_btn">
+                <p>
+                  <button type="button" class="btn btn-primary btn-lg">Agregar</button>
+                  <button type="button" class="btn btn-default btn-lg">Limpiar</button>
+                </p>
               </div>
             </div>
           </form>
@@ -358,24 +362,62 @@
 
       <!-- Experiencias profesionalesl -->
       <div class="row">
-        <div class="col">
-          <h2>Experiencias profesionales</h2>
+        <div class="col-md-12">
+          <h2>Experiencias laboral</h2>
         </div>
       </div>
       <div class="row">
         <div class="col-md-8 form_alineado">
           <form>
-            <div class="form-group row">
-              <div class="form-check-inline">
-                <label for="vehiculo" class="form-check-label"> No tengo ninguna experiencia <span class="glyphicon glyphicon-asterisk" aria-hidden="true"></span></label>
+            <div class="form-group">
+              <div class="form-check">
+                <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                <label class="form-check-label" for="exampleCheck1">No tengo ninguna experiencia</label>
               </div>
-              <div class="form-check-inline">
-                <label class="form-check-label">
-                <input type="radio" class="form-check-input" name="vehiculo">
-              </label>
+              <div class="form-group row">
+                <label for="exampleInputEmail1">Cargo</label>
+                <input type="email" class="form-control" id="#" aria-describedby="emailHelp" placeholder="Enter cargo">
+                <small id="emailHelp" class="form-text text-muted">Breve descripcion de cargo y/o posicion</small>
+              </div>
+              <div class="form-group row">
+                <label for="exampleInputPassword1">Empresa</label>
+                <input type="text" class="form-control" id="exampleInputPassword1" placeholder="Enter empresa">
+                <small id="emailHelp" class="form-text text-muted">Empresa en la que trabajaste</small>
+              </div>
+              <div class="form-group row">
+                <label for="#">Breve descripcion de sus responsabilidades </label>
+                <textarea type="text" class="form-control" id="apellido" placeholder="" rows="5" cols="10" resize="none"></textarea>
+                <div class="contador" id="contadordescperfil">
+                  <p>(máximo 500 carácteres)</p>
+                </div>
+              </div>
+              <div class="form-group row">
+                <div class="col-md-2 label_alineado">
+                  <label for="apellido" class=" col-form-label"> Periodo <span class="glyphicon glyphicon-asterisk" aria-hidden="true"></span></label>
+                </div>
+                <div class="col-md-2">
+                  <select class="form-control mb-2 mr-sm-2" id=""><option value="0">Mes</option><option value="1">1</option><option value="2">2</option><option value="3">3</option><option value="4">4</option><option value="5">5</option><option value="6">6</option><option value="7">7</option><option value="8">8</option><option value="9">9</option><option value="10">10</option><option value="11">11</option><option value="12">12</option></select>
+                </div>
+                <div class="col-md-2">
+                  <select class="form-control mb-2 mr-sm-2" id=""><option value="0">Año</option><!-- Años autoincremental con java --></select>
+                </div>
+                <div class="2">
+                  <span class="glyphicon glyphicon-minus" aria-hidden="true"></span>
+                </div>
+                <div class="col-md-2">
+                  <select class="form-control mb-2 mr-sm-2" id=""><option value="0">Mes</option><option value="1">1</option><option value="2">2</option><option value="3">3</option><option value="4">4</option><option value="5">5</option><option value="6">6</option><option value="7">7</option><option value="8">8</option><option value="9">9</option><option value="10">10</option><option value="11">11</option><option value="12">12</option></select>
+                </div>
+                <div class="col-md-2">
+                  <select class="form-control mb-2 mr-sm-2" id=""><option value="0">Año</option><!-- Años autoincremental con java --></select>
+                </div>
+              </div>
+              <div class="form-group row centrar_btn">
+                <p>
+                  <button type="button" class="btn btn-primary btn-lg">Agregar</button>
+                  <button type="button" class="btn btn-default btn-lg">Limpiar</button>
+                </p>
               </div>
             </div>
-
           </form>
         </div>
         <!-- col-md-8 -->
@@ -386,7 +428,7 @@
       <!-- Formación -->
       <div class="row">
         <div class="col">
-          <h2>Formación</h2>
+          <h2>Formación academica</h2>
         </div>
       </div>
       <div class="row">
@@ -462,8 +504,8 @@
             </div>
             <div class="form-group row centrar_btn">
               <p>
-                <button type="button" class="btn btn-primary btn-lg">Large button</button>
-                <button type="button" class="btn btn-default btn-lg">Large button</button>
+                <button type="button" class="btn btn-primary btn-lg">Agregar</button>
+                <button type="button" class="btn btn-default btn-lg">Limpiar</button>
               </p>
             </div>
           </form>
@@ -587,9 +629,9 @@
       </div>
       <!-- row -->
       <!-- Fin Adjuntar un CV -->
-    <foot>
+      <foot>
 
-    </foot>
+      </foot>
 
     </div>
     <!-- container -->
