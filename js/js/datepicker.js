@@ -6,7 +6,3 @@ $('.datepicker').datepicker({
   todayHighlight: true,
 });
 $('.datepicker').datepicker("setDate", new Date());
-
-// $(document).ready(function() {
-//   console.log("ready!");
-// });
