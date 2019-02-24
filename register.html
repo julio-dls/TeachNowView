@@ -130,7 +130,14 @@
                   <label for="identificación" class="col-form-label">Tipo de identificación<span class="glyphicon glyphicon-search" aria-hidden="true"></span></label>
                 </div>
                 <div class="col-md-4">
-                  <select class="form-control mb-2 mr-sm-2" id="dni"><option value="0">Selecciona</option><option value="1">Pasaporte</option><option value="2">Libreta Cívica</option><option value="3">Cédula de Identidad</option><option value="4">Libreta de Enrolamiento</option><option value="5" selected >D.N.I</option></select>
+                  <select class="form-control mb-2 mr-sm-2" id="dni">
+                    <option value="0">Selecciona</option>
+                    <option value="1">Pasaporte</option>
+                    <option value="2">Libreta Cívica</option>
+                    <option value="3">Cédula de Identidad</option>
+                    <option value="4">Libreta de Enrolamiento</option>
+                    <option value="5" selected>D.N.I</option>
+                  </select>
                 </div>
                 <div class="col-md-6">
                   <input type="text" class="form-control mb-2 mr-sm-2" id="dni" placeholder="">
@@ -142,7 +149,7 @@
                 </div>
                 <div class="form-group">
                   <div class="col-md-10">
-                    <div class='input-group date' id='datepicker'>
+                    <div class='input-group date' data-provide="datepicker">
                       <input class="form-control" />
                       <span class="input-group-addon"><i class="fas fa-calendar-alt"></i></span>
                       </span>
@@ -159,13 +166,13 @@
                 <div class="col-md-10">
                   <div class="form-check-inline">
                     <label class="form-check-label">
-                    <input type="radio" class="form-check-input" name="optradio"> Hombre
-                  </label>
+                      <input type="radio" class="form-check-input" name="optradio"> Hombre
+                    </label>
                   </div>
                   <div class="form-check-inline">
                     <label class="form-check-label">
-                    <input type="radio" class="form-check-input" name="optradio"> Mujer
-                  </label>
+                      <input type="radio" class="form-check-input" name="optradio"> Mujer
+                    </label>
                   </div>
                 </div>
               </div>
@@ -174,7 +181,14 @@
                   <label for="estadoCivil" class=" col-form-label">Estado Civil<span class="glyphicon glyphicon-asterisk" aria-hidden="true"></span></label>
                 </div>
                 <div class="col-sm-10">
-                  <select class="form-control mb-2 mr-sm-2" id="estadoCivil" class="cm-12" name="DLec"><option value="0">Estado Civil</option><option value="1" selected >Soltero(a)</option><option value="2">Casado(a)</option><option value="3">Separado(a)/Divorcia</option><option value="4">Viudo(a)</option><option value="5">Unión libre</option></select>
+                  <select class="form-control mb-2 mr-sm-2" id="estadoCivil" class="cm-12" name="DLec">
+                    <option value="0">Estado Civil</option>
+                    <option value="1" selected>Soltero(a)</option>
+                    <option value="2">Casado(a)</option>
+                    <option value="3">Separado(a)/Divorcia</option>
+                    <option value="4">Viudo(a)</option>
+                    <option value="5">Unión libre</option>
+                  </select>
                 </div>
               </div>
               <div class="form-group row">
@@ -182,7 +196,11 @@
                   <label for="apellido" class=" col-form-label">Teléfono<span class="glyphicon glyphicon-asterisk" aria-hidden="true"></span></label>
                 </div>
                 <div class="col-md-5">
-                  <select class="form-control mb-2 mr-sm-2" id="estadoCivil" class="cm-12" name="DLec">Selecciona</option><option value="1" selected >Celular</option><option value="2">Fijo</option><option value="3">Oficina</option></select>
+                  <select class="form-control mb-2 mr-sm-2" id="estadoCivil" class="cm-12" name="DLec">Selecciona</option>
+                    <option value="1" selected>Celular</option>
+                    <option value="2">Fijo</option>
+                    <option value="3">Oficina</option>
+                  </select>
                 </div>
                 <div class="col-sm-2">
                   <input type="text" class="form-control" id="apellido" placeholder="">
@@ -196,7 +214,11 @@
                   <label for="apellido" class=" col-form-label">Teléfono 2 <span class="glyphicon glyphicon-asterisk" aria-hidden="true"></span></label>
                 </div>
                 <div class="col-md-5">
-                  <select class="form-control mb-2 mr-sm-2" id="estadoCivil" class="cm-12" name="DLec">Selecciona</option><option value="1" selected >Celular</option><option value="2">Fijo</option><option value="3">Oficina</option></select>
+                  <select class="form-control mb-2 mr-sm-2" id="estadoCivil" class="cm-12" name="DLec">Selecciona</option>
+                    <option value="1" selected>Celular</option>
+                    <option value="2">Fijo</option>
+                    <option value="3">Oficina</option>
+                  </select>
                 </div>
                 <div class="col-sm-2">
                   <input type="text" class="form-control" id="apellido" placeholder="">
@@ -218,7 +240,9 @@
                   <label for="estadoCivil" class=" col-form-label">País<span class="glyphicon glyphicon-asterisk" aria-hidden="true"></span></label>
                 </div>
                 <div class="col-sm-10">
-                  <select class="form-control mb-2 mr-sm-2" id="estadoCivil" class="cm-12" name="DLec"><option value="10" selected >Argentina</option></select>
+                  <select class="form-control mb-2 mr-sm-2" id="estadoCivil" class="cm-12" name="DLec">
+                    <option value="10" selected>Argentina</option>
+                  </select>
                 </div>
               </div>
               <div class="form-group row">
@@ -226,7 +250,35 @@
                   <label for="estadoCivil" class=" col-form-label">Región<span class="glyphicon glyphicon-asterisk" aria-hidden="true"></span></label>
                 </div>
                 <div class="col-sm-10">
-                  <select class="form-control mb-2 mr-sm-2" id="estadoCivil" class="cm-12" name="DLec"><option value="0">Departamento</option><option value="3" selected >Capital Federal</option><option value="2">Buenos Aires</option><option value="26">Buenos Aires-GBA</option><option value="4">Catamarca</option><option value="5">Córdoba</option><option value="6">Corrientes</option><option value="7">Chaco</option><option value="8">Chubut</option><option value="9">Entre Ríos</option><option value="10">Formosa</option><option value="11">Jujuy</option><option value="12">La Pampa</option><option value="13">La Rioja</option><option value="14">Mendoza</option><option value="15">Misiones</option><option value="16">Neuquén</option><option value="17">Río Negro</option><option value="18">Salta</option><option value="19">San Juan</option><option value="20">San Luis</option><option value="21">Santa Cruz</option><option value="22">Santa Fe</option><option value="23">Santiago del Estero</option><option value="24">Tierra del Fuego</option><option value="25">Tucumán</option><option value="1">Extranjero</option></select>
+                  <select class="form-control mb-2 mr-sm-2" id="estadoCivil" class="cm-12" name="DLec">
+                    <option value="0">Departamento</option>
+                    <option value="3" selected>Capital Federal</option>
+                    <option value="2">Buenos Aires</option>
+                    <option value="26">Buenos Aires-GBA</option>
+                    <option value="4">Catamarca</option>
+                    <option value="5">Córdoba</option>
+                    <option value="6">Corrientes</option>
+                    <option value="7">Chaco</option>
+                    <option value="8">Chubut</option>
+                    <option value="9">Entre Ríos</option>
+                    <option value="10">Formosa</option>
+                    <option value="11">Jujuy</option>
+                    <option value="12">La Pampa</option>
+                    <option value="13">La Rioja</option>
+                    <option value="14">Mendoza</option>
+                    <option value="15">Misiones</option>
+                    <option value="16">Neuquén</option>
+                    <option value="17">Río Negro</option>
+                    <option value="18">Salta</option>
+                    <option value="19">San Juan</option>
+                    <option value="20">San Luis</option>
+                    <option value="21">Santa Cruz</option>
+                    <option value="22">Santa Fe</option>
+                    <option value="23">Santiago del Estero</option>
+                    <option value="24">Tierra del Fuego</option>
+                    <option value="25">Tucumán</option>
+                    <option value="1">Extranjero</option>
+                  </select>
                 </div>
               </div>
               <div class="form-group row">
@@ -234,7 +286,57 @@
                   <label for="estadoCivil" class=" col-form-label">Ciudad<span class="glyphicon glyphicon-asterisk" aria-hidden="true"></span></label>
                 </div>
                 <div class="col-sm-10">
-                  <select class="form-control mb-2 mr-sm-2" id="estadoCivil" class="cm-12" name="DLec"><option value="0">Ciudad</option><option value="143">Agronomía</option><option value="144">Almagro</option><option value="145">Balvanera</option><option value="146">Barracas</option><option value="147">Belgrano</option><option value="148">Boca</option><option value="149">Boedo</option><option value="150">Caballito</option><option value="151">Chacarita</option><option value="152">Coghlan</option><option value="153">Colegiales</option><option value="154">Constitución</option><option value="155">Flores</option><option value="156">Floresta</option><option value="157">La Paternal</option><option value="158">Liniers</option><option value="159">Mataderos</option><option value="160">Monserrat</option><option value="161">Monte Castro</option><option value="162">Nueva Pompeya</option><option value="163">Núñez</option><option value="164">Palermo</option><option value="165">Parque Avellaneda</option><option value="166">Parque Chacabuco</option><option value="167">Parque Chas</option><option value="168">Parque Patricios</option><option value="169">Puerto Madero</option><option value="170" selected >Recoleta</option><option value="171">Retiro</option><option value="172">Saavedra</option><option value="173">San Cristóbal</option><option value="174">San Nicolás</option><option value="175">San Telmo</option><option value="176">Vélez Sársfield</option><option value="177">Versalles</option><option value="178">Villa Crespo</option><option value="179">Villa del Parque</option><option value="180">Villa Devoto</option><option value="181">Villa Gral. Mitre</option><option value="182">Villa Lugano</option><option value="183">Villa Luro</option><option value="184">Villa Ortúzar</option><option value="185">Villa Pueyrredón</option><option value="186">Villa Real</option><option value="187">Villa Riachuelo</option><option value="188">Villa Santa Rita</option><option value="189">Villa Soldati</option><option value="190">Villa Urquiza</option></select>
+                  <select class="form-control mb-2 mr-sm-2" id="estadoCivil" class="cm-12" name="DLec">
+                    <option value="0">Ciudad</option>
+                    <option value="143">Agronomía</option>
+                    <option value="144">Almagro</option>
+                    <option value="145">Balvanera</option>
+                    <option value="146">Barracas</option>
+                    <option value="147">Belgrano</option>
+                    <option value="148">Boca</option>
+                    <option value="149">Boedo</option>
+                    <option value="150">Caballito</option>
+                    <option value="151">Chacarita</option>
+                    <option value="152">Coghlan</option>
+                    <option value="153">Colegiales</option>
+                    <option value="154">Constitución</option>
+                    <option value="155">Flores</option>
+                    <option value="156">Floresta</option>
+                    <option value="157">La Paternal</option>
+                    <option value="158">Liniers</option>
+                    <option value="159">Mataderos</option>
+                    <option value="160">Monserrat</option>
+                    <option value="161">Monte Castro</option>
+                    <option value="162">Nueva Pompeya</option>
+                    <option value="163">Núñez</option>
+                    <option value="164">Palermo</option>
+                    <option value="165">Parque Avellaneda</option>
+                    <option value="166">Parque Chacabuco</option>
+                    <option value="167">Parque Chas</option>
+                    <option value="168">Parque Patricios</option>
+                    <option value="169">Puerto Madero</option>
+                    <option value="170" selected>Recoleta</option>
+                    <option value="171">Retiro</option>
+                    <option value="172">Saavedra</option>
+                    <option value="173">San Cristóbal</option>
+                    <option value="174">San Nicolás</option>
+                    <option value="175">San Telmo</option>
+                    <option value="176">Vélez Sársfield</option>
+                    <option value="177">Versalles</option>
+                    <option value="178">Villa Crespo</option>
+                    <option value="179">Villa del Parque</option>
+                    <option value="180">Villa Devoto</option>
+                    <option value="181">Villa Gral. Mitre</option>
+                    <option value="182">Villa Lugano</option>
+                    <option value="183">Villa Luro</option>
+                    <option value="184">Villa Ortúzar</option>
+                    <option value="185">Villa Pueyrredón</option>
+                    <option value="186">Villa Real</option>
+                    <option value="187">Villa Riachuelo</option>
+                    <option value="188">Villa Santa Rita</option>
+                    <option value="189">Villa Soldati</option>
+                    <option value="190">Villa Urquiza</option>
+                  </select>
                 </div>
               </div>
               <div class="form-group row">
@@ -258,7 +360,9 @@
                   <label for="nacionalidad" class=" col-form-label">Nacionalidad<span class="glyphicon glyphicon-asterisk" aria-hidden="true"></span></label>
                 </div>
                 <div class="col-sm-10">
-                  <select class="form-control mb-2 mr-sm-2" id="nacionalidad" class="cm-12" name="DLec"><option value="0">Nacionalidad</option></select>
+                  <select class="form-control mb-2 mr-sm-2" id="nacionalidad" class="cm-12" name="DLec">
+                    <option value="0">Nacionalidad</option>
+                  </select>
                 </div>
               </div>
 
@@ -267,7 +371,25 @@
                   <label for="licenciaConducir" class=" col-form-label">Licencia de conducir<span class="glyphicon glyphicon-asterisk" aria-hidden="true"></span></label>
                 </div>
                 <div class="col-md-10 col-sm-10">
-                  <select class="form-control mb-2 mr-sm-2" id="licenciaConducir" class="cm-12" name="DLec"> <option value="0"></option> <option value="1" selected >A1</option> <option value="2">A2</option> <option value="3">A2.1</option> <option value="4">A2.2</option> <option value="5">A3</option> <option value="6">B1</option> <option value="7">B2</option> <option value="8">C2</option> <option value="9">D1</option> <option value="10">D2</option> <option value="11">E1</option> <option value="12">E2</option> <option value="13">F</option> <option value="14">G1</option> <option value="15">G2</option> <option value="16">No tengo</option></select>
+                  <select class="form-control mb-2 mr-sm-2" id="licenciaConducir" class="cm-12" name="DLec">
+                    <option value="0"></option>
+                    <option value="1" selected>A1</option>
+                    <option value="2">A2</option>
+                    <option value="3">A2.1</option>
+                    <option value="4">A2.2</option>
+                    <option value="5">A3</option>
+                    <option value="6">B1</option>
+                    <option value="7">B2</option>
+                    <option value="8">C2</option>
+                    <option value="9">D1</option>
+                    <option value="10">D2</option>
+                    <option value="11">E1</option>
+                    <option value="12">E2</option>
+                    <option value="13">F</option>
+                    <option value="14">G1</option>
+                    <option value="15">G2</option>
+                    <option value="16">No tengo</option>
+                  </select>
                 </div>
               </div>
 
@@ -280,13 +402,13 @@
                 <div class="col-md-10">
                   <div class="form-check-inline">
                     <label class="form-check-label">
-                    <input type="radio" class="form-check-input" name="vehiculo"> Sí
-                  </label>
+                      <input type="radio" class="form-check-input" name="vehiculo"> Sí
+                    </label>
                   </div>
                   <div class="form-check-inline">
                     <label class="form-check-label">
-                    <input type="radio" class="form-check-input" name="vehiculo"> No
-                  </label>
+                      <input type="radio" class="form-check-input" name="vehiculo"> No
+                    </label>
                   </div>
                 </div>
               </div>
@@ -299,8 +421,8 @@
                 <div class="col-md-10">
                   <div class="form-check-inline">
                     <label class="form-check-label">
-                    <input type="radio" class="form-check-input" name="vehiculo">
-                  </label>
+                      <input type="radio" class="form-check-input" name="vehiculo">
+                    </label>
                   </div>
                 </div>
               </div>
@@ -320,250 +442,121 @@
                   </a>
                 </div>
             </form>
-            </div>
           </div>
-          <!-- col-md-8 -->
         </div>
-      </section>
-      <!-- FIN DATOS PERSONALES -->
+        <!-- col-md-8 -->
+    </div>
+    </section>
+    <!-- FIN DATOS PERSONALES -->
 
-      <!-- PERFIL PROFESIONAL -->
-      <section id="PERFIL_PROFESIONAL">
-        <div class="row">
-          <div class="col">
-            <h2>Perfil profesional</h2>
+    <!-- PERFIL PROFESIONAL -->
+    <section id="PERFIL_PROFESIONAL">
+      <div class="row">
+        <div class="col">
+          <h2>Perfil profesional</h2>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-8 form_alineado">
+          <div class="alert alert-danger" role="alert">
+            Agregar perfil ...
           </div>
         </div>
-        <div class="row">
-          <div class="col-md-8 form_alineado">
-            <div class="alert alert-danger" role="alert">
-              Agregar perfil ...
-            </div>
-          </div>
+      </div>
+      <div class="row">
+        <div class="col-md-8 form_alineado">
+          <button type="button" class="btn btn-primary text-center" data-toggle="modal" data-target=".bd-perfil_profesional-modal-lg">Agregar perfil</button>
         </div>
-        <div class="row">
-          <div class="col-md-8 form_alineado">
-            <button type="button" class="btn btn-primary text-center" data-toggle="modal" data-target=".bd-perfil_profesional-modal-lg">Agregar perfil</button>
-          </div>
-        </div>
-        <!-- MODAL PERFIL PROFESIONAL -->
-        <div class="modal fade bd-perfil_profesional-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myExtraLargeModalLabel" aria-hidden="true">
-          <div class="modal-dialog modal-lg">
-            <div class="modal-content">
-              <div class="row">
+      </div>
+      <!-- MODAL PERFIL PROFESIONAL -->
+      <div class="modal fade bd-perfil_profesional-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myExtraLargeModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+          <div class="modal-content">
+            <div class="row">
 
-                <!-- col-md-8 -->
-                <div class="col-md-8 form_alineado">
-                  <form>
-                    <div class="form-group">
-                      <div class="form-group row">
-                        <label for="exampleInputPassword1">Area de mayor dominio</label>
-                        <input type="text" class="form-control" id="exampleInputPassword1" placeholder="Ingresar especialidad">
-                        <small id="emailHelp" class="form-text text-muted">Ejemplo: programador, admnistrador de servidores, maquetador web, etc</small>
-                      </div>
-                      <div class="form-group row">
-                        <label for="#">Breve descripcion de las habilidades que mejor dominas </label>
-                        <textarea type="text" class="form-control" id="apellido" placeholder="" rows="5" cols="10" resize="none"></textarea>
-                        <div class="contador" id="contadordescperfil">
-                          <p>(máximo 500 carácteres)</p>
-                        </div>
-                      </div>
-
-                      <div class="form-group row centrar_btn">
-                        <p>
-                          <button type="button" class="btn btn-primary btn-lg">Listo</button>
-                          <button type="button" class="btn btn-default btn-lg">Limpiar</button>
-                        </p>
+              <!-- col-md-8 -->
+              <div class="col-md-8 form_alineado">
+                <form>
+                  <div class="form-group">
+                    <div class="form-group row">
+                      <label for="exampleInputPassword1">Area de mayor dominio</label>
+                      <input type="text" class="form-control" id="exampleInputPassword1" placeholder="Ingresar especialidad">
+                      <small id="emailHelp" class="form-text text-muted">Ejemplo: programador, admnistrador de servidores, maquetador web, etc</small>
+                    </div>
+                    <div class="form-group row">
+                      <label for="#">Breve descripcion de las habilidades que mejor dominas </label>
+                      <textarea type="text" class="form-control" id="apellido" placeholder="" rows="5" cols="10" resize="none"></textarea>
+                      <div class="contador" id="contadordescperfil">
+                        <p>(máximo 500 carácteres)</p>
                       </div>
                     </div>
-                  </form>
-                </div>
-                <!-- col-md-8 -->
+
+                    <div class="form-group row centrar_btn">
+                      <p>
+                        <button type="button" class="btn btn-primary btn-lg">Listo</button>
+                        <button type="button" class="btn btn-default btn-lg">Limpiar</button>
+                      </p>
+                    </div>
+                  </div>
+                </form>
               </div>
+              <!-- col-md-8 -->
             </div>
           </div>
         </div>
-        <!-- FIN MODAL PERFIL PROFESIONAL -->
-      </section>
-      <!-- FIN PERFIL PROFESIONAL -->
+      </div>
+      <!-- FIN MODAL PERFIL PROFESIONAL -->
+    </section>
+    <!-- FIN PERFIL PROFESIONAL -->
 
-      <!-- EXPERIENCIA LABORAL -->
-      <section id="EXPERIENCIA_LABORAL">
-        <div class="row">
-          <div class="col-md-12">
-            <h2>Experiencias laboral</h2>
+    <!-- EXPERIENCIA LABORAL -->
+    <section id="EXPERIENCIA_LABORAL">
+      <div class="row">
+        <div class="col-md-12">
+          <h2>Experiencias laboral</h2>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-8 form_alineado">
+          <div class="alert alert-danger" role="alert">
+            Agregar experiencia ...
           </div>
         </div>
-        <div class="row">
-          <div class="col-md-8 form_alineado">
-            <div class="alert alert-danger" role="alert">
-              Agregar experiencia ...
-            </div>
-          </div>
+      </div>
+      <div class="row">
+        <div class="col-md-8 form_alineado">
+          <button type="button" class="btn btn-primary" data-toggle="modal" data-target=".bd-experiencia-laboral-modal-lg">Agregar experiencia</button>
         </div>
-        <div class="row">
-          <div class="col-md-8 form_alineado">
-            <button type="button" class="btn btn-primary" data-toggle="modal" data-target=".bd-experiencia-laboral-modal-lg">Agregar experiencia</button>
-          </div>
-        </div>
-        <!-- MODAL EXPERIENCIA LABORAL -->
-        <div class="modal fade bd-experiencia-laboral-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myExtraLargeModalLabel" aria-hidden="true">
-          <div class="modal-dialog modal-lg">
-            <div class="modal-content">
-              <div class="row">
-                <div class="col-md-8 form_alineado">
-                  <form>
-                    <div class="form-group">
-                      <div class="form-check">
-                        <input type="checkbox" class="form-check-input" id="exampleCheck1">
-                        <label class="form-check-label" for="exampleCheck1"> No tengo ninguna experiencia</label>
-                      </div>
-                      <div class="form-group row">
-                        <label for="exampleInputEmail1">Cargo</label>
-                        <input type="email" class="form-control" id="#" aria-describedby="emailHelp" placeholder="Enter cargo">
-                        <small id="emailHelp" class="form-text text-muted">Breve descripcion de cargo y/o posicion</small>
-                      </div>
-                      <div class="form-group row">
-                        <label for="exampleInputPassword1">Empresa</label>
-                        <input type="text" class="form-control" id="exampleInputPassword1" placeholder="Enter empresa">
-                        <small id="emailHelp" class="form-text text-muted">Empresa en la que trabajaste</small>
-                      </div>
-                      <div class="form-group row">
-                        <label for="#">Breve descripcion de sus responsabilidades </label>
-                        <textarea type="text" class="form-control" id="#" placeholder="" rows="5" cols="10" resize="none"></textarea>
-                        <div class="contador" id="contadordescperfil">
-                          <p>(máximo 500 carácteres)</p>
-                        </div>
-                      </div>
-                      <div class="form-group row">
-                        <div class="col-md-2 label_alineado">
-                          <label for="apellido" class=" col-form-label"> Periodo <span class="glyphicon glyphicon-asterisk" aria-hidden="true"></span></label>
-                        </div>
-                      </div>
-                      <div class="form-group row">
-                        <div class="col-md-2 label_alineado">
-                          <label for="#" class=" col-form-label">Inicio</label>
-                        </div>
-                        <div class="form-group">
-                          <div class="col-md-10">
-                            <div class='input-group date' id='datepicker'>
-                              <input class="form-control" />
-                              <span class="input-group-addon"><i class="fas fa-calendar-alt"></i></span>
-                              </span>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                      <div class="form-group row">
-                        <div class="col-md-2 label_alineado">
-                          <label for="#" class=" col-form-label">Fin</label>
-                        </div>
-                        <div class="form-group">
-                          <div class="col-md-10">
-                            <div class='input-group date' id='datepicker'>
-                              <input class="form-control" />
-                              <span class="input-group-addon"><i class="fas fa-calendar-alt"></i></span>
-                              </span>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-
-                      <div class="form-group row centrar_btn">
-                        <p>
-                          <button type="button" class="btn btn-primary btn-lg">Listo</button>
-                          <button type="button" class="btn btn-default btn-lg">Limpiar</button>
-                        </p>
-                      </div>
-                    </div>
-                  </form>
-                </div>
-                <!-- col-md-8 -->
-              </div>
-
-            </div>
-          </div>
-        </div>
-        <!-- MODAL EXPERIENCIA LABORAL -->
-      </section>
-      <!-- FIN EXPERIENCIA LABORAL -->
-
-      <!-- FORMACION ACADEMICA -->
-      <section id="FORMACION_ACADEMICA">
-        <div class="row">
-          <div class="col">
-            <h2>Formación academica</h2>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-md-8 form_alineado">
-            <div class="alert alert-danger" role="alert">
-              Agregar perfil ...
-            </div>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-md-8 form_alineado">
-            <button type="button" class="btn btn-primary" data-toggle="modal" data-target=".bd-formacion_academica-modal-lg">Agregar formacion</button>
-          </div>
-        </div>
-
-        <!-- MODAL FORMACION ACADEMICA -->
-        <div class="modal fade bd-formacion_academica-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myExtraLargeModalLabel" aria-hidden="true">
-          <div class="modal-dialog modal-lg">
-            <div class="modal-content">
-              <div class="row">
-                <div class="col-md-8 form_alineado">
-                  <form>
-                    <div class="form-group row">
-                      <div class="col-md-2 label_alineado">
-                        <label for="nombre" class=" col-form-label">Centro educativo</label>
-                      </div>
-                      <div class="col-md-10 col-sm-10">
-                        <input type="text" class="form-control" id="nombre" placeholder="">
-                      </div>
+      </div>
+      <!-- MODAL EXPERIENCIA LABORAL -->
+      <div class="modal fade bd-experiencia-laboral-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myExtraLargeModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+          <div class="modal-content">
+            <div class="row">
+              <div class="col-md-8 form_alineado">
+                <form>
+                  <div class="form-group">
+                    <div class="form-check">
+                      <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                      <label class="form-check-label" for="exampleCheck1"> No tengo ninguna experiencia</label>
                     </div>
                     <div class="form-group row">
-                      <div class="col-md-2 label_alineado">
-                        <label for="estadoCivil" class=" col-form-label">Nivel de estudios<span class="glyphicon glyphicon-asterisk" aria-hidden="true"></span></label>
-                      </div>
-                      <div class="col-sm-10">
-                        <select class="form-control mb-2 mr-sm-2" id="licenciaConducir" class="cm-12" name="DLec"> <option value="0">Nivel de estudios</option><option value="1">Primaria</option><option value="2">Secundaria</option><option value="3">Terciario</option><option value="4">Universitario</option><option value="5">Posgrado</option><option value="6">Master</option><option value="7">Doctorado</option></select>
-                      </div>
+                      <label for="exampleInputEmail1">Cargo</label>
+                      <input type="email" class="form-control" id="#" aria-describedby="emailHelp" placeholder="Enter cargo">
+                      <small id="emailHelp" class="form-text text-muted">Breve descripcion de cargo y/o posicion</small>
                     </div>
                     <div class="form-group row">
-                      <div class="col-md-2 label_alineado">
-                        <label for="nombre" class=" col-form-label">Área de estudio</label>
-                      </div>
-                      <div class="col-md-10 col-sm-10">
-                        <input type="text" class="form-control" id="nombre" placeholder="">
-                      </div>
+                      <label for="exampleInputPassword1">Empresa</label>
+                      <input type="text" class="form-control" id="exampleInputPassword1" placeholder="Enter empresa">
+                      <small id="emailHelp" class="form-text text-muted">Empresa en la que trabajaste</small>
                     </div>
                     <div class="form-group row">
-                      <div class="col-md-2 label_alineado">
-                        <div class="form-check-inline">
-                          <label for="vehiculo" class="form-check-label"> Estado <span class="glyphicon glyphicon-asterisk" aria-hidden="true"></span></label>
-                        </div>
-                      </div>
-                      <div class="col-md-10">
-                        <div class="form-check-inline">
-                          <label class="form-check-label">
-                        <input type="radio" class="form-check-input" name="vehiculo"> Culminado
-                      </label>
-                        </div>
-                        <div class="form-check-inline">
-                          <label class="form-check-label">
-                        <input type="radio" class="form-check-input" name="vehiculo"> Cursando
-                      </label>
-                        </div>
-                        <div class="form-check-inline">
-                          <label class="form-check-label">
-                        <input type="radio" class="form-check-input" name="vehiculo"> Abandonado / Aplazado
-                      </label>
-                        </div>
+                      <label for="#">Breve descripcion de sus responsabilidades </label>
+                      <textarea type="text" class="form-control" id="#" placeholder="" rows="5" cols="10" resize="none"></textarea>
+                      <div class="contador" id="contadordescperfil">
+                        <p>(máximo 500 carácteres)</p>
                       </div>
                     </div>
-
                     <div class="form-group row">
                       <div class="col-md-2 label_alineado">
                         <label for="apellido" class=" col-form-label"> Periodo <span class="glyphicon glyphicon-asterisk" aria-hidden="true"></span></label>
@@ -575,7 +568,7 @@
                       </div>
                       <div class="form-group">
                         <div class="col-md-10">
-                          <div class='input-group date' id='datepicker'>
+                          <div class='input-group date' data-provide="datepicker">
                             <input class="form-control" />
                             <span class="input-group-addon"><i class="fas fa-calendar-alt"></i></span>
                             </span>
@@ -589,7 +582,7 @@
                       </div>
                       <div class="form-group">
                         <div class="col-md-10">
-                          <div class='input-group date' id='datepicker'>
+                          <div class='input-group date' data-provide="datepicker">
                             <input class="form-control" />
                             <span class="input-group-addon"><i class="fas fa-calendar-alt"></i></span>
                             </span>
@@ -604,221 +597,373 @@
                         <button type="button" class="btn btn-default btn-lg">Limpiar</button>
                       </p>
                     </div>
-                  </form>
-                </div>
-                <!-- col-md-8 -->
+                  </div>
+                </form>
               </div>
+              <!-- col-md-8 -->
             </div>
-          </div>
-        </div>
-        <!-- FIN MODAL FORMACION ACADEMICA   -->
-      </section>
-      <!-- FIN FORMACON ACADEMICA -->
 
-      <!-- IDIOMAS -->
-      <section id="IDIOMAS">
-
-        <div class="row">
-          <div class="col">
-            <h2>Idiomas</h2>
           </div>
         </div>
-        <div class="row">
-          <div class="col-md-8 form_alineado">
-            <div class="alert alert-danger" role="alert">
-              Agregar idiomas ...
-            </div>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-md-8 form_alineado">
-            <button type="button" class="btn btn-primary" data-toggle="modal" data-target=".bd-idioma-modal-lg">Agregar idioma</button>
-          </div>
-        </div>
-        <!-- MODAL IDIOMAS -->
-        <div class="modal fade bd-idioma-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myExtraLargeModalLabel" aria-hidden="true">
-          <div class="modal-dialog modal-lg">
-            <div class="modal-content">
-              <div class="row">
-                <div class="col-md-8 form_alineado">
-                  <form>
-                    <div class="form-group row">
-                      <div class="col-md-2 label_alineado">
-                        <label for="identificación" class="col-form-label">Idiomas<span class="glyphicon glyphicon-search" aria-hidden="true"></span></label>
-                      </div>
-                      <div class="col-md-6">
-                        <select class="form-control mb-2 mr-sm-2" id="licenciaConducir" class="cm-12" name="DLec">Idiomas</option></select>
-                      </div>
-                      <div class="col-md-4"><select class="form-control mb-2 mr-sm-2" id="licenciaConducir" class="cm-12" name="DLec">Nivel</option><option value="1">Muy Básico</option><option value="2">Básico</option><option value="3">Intermedio</option><option value="4">Avanzado</option><option value="5">Nativo</option></select>                        </div>
-                    </div>
-
-                    <div class="form-group row centrar_btn">
-                      <p>
-                        <button type="button" class="btn btn-primary btn-lg">Listo</button>
-                        <button type="button" class="btn btn-default btn-lg">Limpiar</button>
-                      </p>
-                    </div>
-                  </form>
-                </div>
-                <!-- col-md-8 -->
-              </div>
-            </div>
-          </div>
-        </div>
-        <!-- FIN MODAL IDIOMAS -->
-      </section>
-      <!-- FIN IDIOMAS -->
-
-      <!-- CONOCIMIENTOS INFORMATICOS -->
-      <section id="CONOCIMIENTOS_INFORMATICOS">
-
-        <div class="row">
-          <div class="col">
-            <h2>Conocimientos informáticos</h2>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-md-8 form_alineado">
-            <div class="alert alert-danger" role="alert">
-              Agregar conocimientos ...
-            </div>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-md-8 form_alineado">
-            <button type="button" class="btn btn-primary" data-toggle="modal" data-target=".bd-conocimientos-informáticos-modal-lg">Agregar conocimientos</button>
-          </div>
-        </div>
-
-        <!-- MODAL CONOCIMIENTOS INFORMATICOS -->
-        <div class="modal fade bd-conocimientos-informáticos-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myExtraLargeModalLabel" aria-hidden="true">
-          <div class="modal-dialog modal-lg">
-            <div class="modal-content">
-              <div class="row">
-                <div class="col-md-8 form_alineado">
-                  <form>
-                    <div class="form-group row">
-                      <div class="col-md-2 label_alineado">
-                        <label for="identificación" class="col-form-label">Programas informáticos<span class="glyphicon glyphicon-search" aria-hidden="true"></span></label>
-                      </div>
-                      <div class="col-md-6">
-                        <select class="form-control mb-2 mr-sm-2" id="licenciaConducir" class="cm-12" name="DLec"><option value="0">Selecciona</option></select>
-                      </div>
-                      <div class="col-md-4">
-                        <select class="form-control mb-2 mr-sm-2" id="licenciaConducir" class="cm-12" name="DLec"><option value="0">Nivel</option><option value="1">Usuario</option><option value="2">Avanzado</option><option value="3">Profesional</option><option value="4">Experto</option></select>
-                      </div>
-                    </div>
-
-                    <div class="form-group row centrar_btn">
-                      <p>
-                        <button type="button" class="btn btn-primary btn-lg">Listo</button>
-                        <button type="button" class="btn btn-default btn-lg">Limpiar</button>
-                      </p>
-                    </div>
-                  </form>
-                </div>
-                <!-- col-md-8 -->
-              </div>
-
-            </div>
-          </div>
-        </div>
-        <!-- FIN MODAL CONOCIMIETNOS INFORMATICOS -->
-      </section>
-      <!-- FIN CONOCIMIENTOS INFORMATICOS -->
-
-      <!-- CONOCIMIENTOS Y HABILIDADES -->
-      <section id="CONOCIMIENTOS_Y_HABILIDADES">
-
-        <div class="row">
-          <div class="col">
-            <h2>Conocimientos y habilidades</h2>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-md-8 form_alineado">
-            <div class="alert alert-danger" role="alert">
-              Agregar conocimientos Y habilidades...
-            </div>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-md-8 form_alineado">
-            <button type="button" class="btn btn-primary" data-toggle="modal" data-target=".bd-conocimientos-Y-habilidades-modal-lg">Agregar conocimientos</button>
-          </div>
-        </div>
-        <!-- MODAL CONOCIMIENTOS Y HABILIDADES -->
-        <div class="modal fade bd-conocimientos-Y-habilidades-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myExtraLargeModalLabel" aria-hidden="true">
-          <div class="modal-dialog modal-lg">
-            <div class="modal-content">
-              <div class="row">
-                <div class="col-md-8 form_alineado">
-                  <form>
-                    <div class="col-md-12">
-                      <label for="Cargo" class=" col-form-label">Escribí tus conocimientos</label>
-                    </div>
-
-                    <div class="col-md-12">
-                      <textarea type="text" class="form-control" id="apellido" placeholder="" rows="5" cols="10" resize="none"></textarea>
-                      <div class="contador" id="contadordescperfil">
-                        <p>(máximo 500 carácteres)</p>
-                      </div>
-                    </div>
-
-                    <div class="form-group row centrar_btn">
-                      <p>
-                        <button type="button" class="btn btn-primary btn-lg">Listo</button>
-                        <button type="button" class="btn btn-default btn-lg">Limpiar</button>
-                      </p>
-                    </div>
-                  </form>
-                </div>
-                <!-- col-md-8 -->
-              </div>
-            </div>
-          </div>
-        </div>
-        <!-- FIN MODAL CONOCIMIENTOS Y HABILIDADES -->
-      </section>
-      <!-- FIN CONOCIMIENTOS Y HABILIDADES -->
-
-      <!-- ADJUNTASR CV -->
-      <section id="ADJUNTASR_CV">
-
-        <div class="row">
-          <div class="col">
-            <h2>Adjuntar un CV</h2>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-md-8 form_alineado">
-            <form>
-              <div class="form-group row">
-                <div class="col-md-3 label_alineado">
-                  <label for="nombre" class=" col-form-label">Curriculum Vitae</label>
-                </div>
-                <div class="col-md-9 col-sm-10">
-                  <input type="file" class="form-control" id="nombre" placeholder="Dirección">
-                </div>
-              </div>
-              <div class="col-md-10">
-                <button type="button" class="btn btn-primary btn-lg btn-block">Enviar</button>
-              </div>
-            </form>
-          </div>
-          <!-- col-md-8 -->
-        </div>
-      </section>
-      <!-- FIN ADJUNTAR CV -->
-    </div>
-    <!--  FIN CONTAINER FLUID -->
-    <!-- FOOTER -->
-    <footer style="background:#000;margin-top:0px;">
-      <div class="footer-copyright text-center py-3">© 2019 Copyright:
-        <a href="#"> developerwebmj@gmail.com</a>
       </div>
-    </footer>
-    <!-- FIN FOOTER -->
+      <!-- MODAL EXPERIENCIA LABORAL -->
+    </section>
+    <!-- FIN EXPERIENCIA LABORAL -->
+
+    <!-- FORMACION ACADEMICA -->
+    <section id="FORMACION_ACADEMICA">
+      <div class="row">
+        <div class="col">
+          <h2>Formación academica</h2>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-8 form_alineado">
+          <div class="alert alert-danger" role="alert">
+            Agregar perfil ...
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-8 form_alineado">
+          <button type="button" class="btn btn-primary" data-toggle="modal" data-target=".bd-formacion_academica-modal-lg">Agregar formacion</button>
+        </div>
+      </div>
+
+      <!-- MODAL FORMACION ACADEMICA -->
+      <div class="modal fade bd-formacion_academica-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myExtraLargeModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+          <div class="modal-content">
+            <div class="row">
+              <div class="col-md-8 form_alineado">
+                <form>
+                  <div class="form-group row">
+                    <div class="col-md-2 label_alineado">
+                      <label for="nombre" class=" col-form-label">Centro educativo</label>
+                    </div>
+                    <div class="col-md-10 col-sm-10">
+                      <input type="text" class="form-control" id="nombre" placeholder="">
+                    </div>
+                  </div>
+                  <div class="form-group row">
+                    <div class="col-md-2 label_alineado">
+                      <label for="estadoCivil" class=" col-form-label">Nivel de estudios<span class="glyphicon glyphicon-asterisk" aria-hidden="true"></span></label>
+                    </div>
+                    <div class="col-sm-10">
+                      <select class="form-control mb-2 mr-sm-2" id="licenciaConducir" class="cm-12" name="DLec">
+                        <option value="0">Nivel de estudios</option>
+                        <option value="1">Primaria</option>
+                        <option value="2">Secundaria</option>
+                        <option value="3">Terciario</option>
+                        <option value="4">Universitario</option>
+                        <option value="5">Posgrado</option>
+                        <option value="6">Master</option>
+                        <option value="7">Doctorado</option>
+                      </select>
+                    </div>
+                  </div>
+                  <div class="form-group row">
+                    <div class="col-md-2 label_alineado">
+                      <label for="nombre" class=" col-form-label">Área de estudio</label>
+                    </div>
+                    <div class="col-md-10 col-sm-10">
+                      <input type="text" class="form-control" id="nombre" placeholder="">
+                    </div>
+                  </div>
+                  <div class="form-group row">
+                    <div class="col-md-2 label_alineado">
+                      <div class="form-check-inline">
+                        <label for="vehiculo" class="form-check-label"> Estado <span class="glyphicon glyphicon-asterisk" aria-hidden="true"></span></label>
+                      </div>
+                    </div>
+                    <div class="col-md-10">
+                      <div class="form-check-inline">
+                        <label class="form-check-label">
+                          <input type="radio" class="form-check-input" name="vehiculo"> Culminado
+                        </label>
+                      </div>
+                      <div class="form-check-inline">
+                        <label class="form-check-label">
+                          <input type="radio" class="form-check-input" name="vehiculo"> Cursando
+                        </label>
+                      </div>
+                      <div class="form-check-inline">
+                        <label class="form-check-label">
+                          <input type="radio" class="form-check-input" name="vehiculo"> Abandonado / Aplazado
+                        </label>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="form-group row">
+                    <div class="col-md-2 label_alineado">
+                      <label for="apellido" class=" col-form-label"> Periodo <span class="glyphicon glyphicon-asterisk" aria-hidden="true"></span></label>
+                    </div>
+                  </div>
+                  <div class="form-group row">
+                    <div class="col-md-2 label_alineado">
+                      <label for="#" class=" col-form-label">Inicio</label>
+                    </div>
+                    <div class="form-group">
+                      <div class="col-md-10">
+                        <div class='input-group date' data-provide="datepicker">
+                          <input class="form-control" />
+                          <span class="input-group-addon"><i class="fas fa-calendar-alt"></i></span>
+                          </span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="form-group row">
+                    <div class="col-md-2 label_alineado">
+                      <label for="#" class=" col-form-label">Fin</label>
+                    </div>
+                    <div class="form-group">
+                      <div class="col-md-10">
+                        <div class='input-group date' data-provide="datepicker">
+                          <input class="form-control" />
+                          <span class="input-group-addon"><i class="fas fa-calendar-alt"></i></span>
+                          </span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="form-group row centrar_btn">
+                    <p>
+                      <button type="button" class="btn btn-primary btn-lg">Listo</button>
+                      <button type="button" class="btn btn-default btn-lg">Limpiar</button>
+                    </p>
+                  </div>
+                </form>
+              </div>
+              <!-- col-md-8 -->
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- FIN MODAL FORMACION ACADEMICA   -->
+    </section>
+    <!-- FIN FORMACON ACADEMICA -->
+
+    <!-- IDIOMAS -->
+    <section id="IDIOMAS">
+
+      <div class="row">
+        <div class="col">
+          <h2>Idiomas</h2>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-8 form_alineado">
+          <div class="alert alert-danger" role="alert">
+            Agregar idiomas ...
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-8 form_alineado">
+          <button type="button" class="btn btn-primary" data-toggle="modal" data-target=".bd-idioma-modal-lg">Agregar idioma</button>
+        </div>
+      </div>
+      <!-- MODAL IDIOMAS -->
+      <div class="modal fade bd-idioma-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myExtraLargeModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+          <div class="modal-content">
+            <div class="row">
+              <div class="col-md-8 form_alineado">
+                <form>
+                  <div class="form-group row">
+                    <div class="col-md-2 label_alineado">
+                      <label for="identificación" class="col-form-label">Idiomas<span class="glyphicon glyphicon-search" aria-hidden="true"></span></label>
+                    </div>
+                    <div class="col-md-6">
+                      <select class="form-control mb-2 mr-sm-2" id="licenciaConducir" class="cm-12" name="DLec">Idiomas</option></select>
+                    </div>
+                    <div class="col-md-4"><select class="form-control mb-2 mr-sm-2" id="licenciaConducir" class="cm-12" name="DLec">Nivel</option>
+                        <option value="1">Muy Básico</option>
+                        <option value="2">Básico</option>
+                        <option value="3">Intermedio</option>
+                        <option value="4">Avanzado</option>
+                        <option value="5">Nativo</option>
+                      </select> </div>
+                  </div>
+
+                  <div class="form-group row centrar_btn">
+                    <p>
+                      <button type="button" class="btn btn-primary btn-lg">Listo</button>
+                      <button type="button" class="btn btn-default btn-lg">Limpiar</button>
+                    </p>
+                  </div>
+                </form>
+              </div>
+              <!-- col-md-8 -->
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- FIN MODAL IDIOMAS -->
+    </section>
+    <!-- FIN IDIOMAS -->
+
+    <!-- CONOCIMIENTOS INFORMATICOS -->
+    <section id="CONOCIMIENTOS_INFORMATICOS">
+
+      <div class="row">
+        <div class="col">
+          <h2>Conocimientos informáticos</h2>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-8 form_alineado">
+          <div class="alert alert-danger" role="alert">
+            Agregar conocimientos ...
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-8 form_alineado">
+          <button type="button" class="btn btn-primary" data-toggle="modal" data-target=".bd-conocimientos-informáticos-modal-lg">Agregar conocimientos</button>
+        </div>
+      </div>
+
+      <!-- MODAL CONOCIMIENTOS INFORMATICOS -->
+      <div class="modal fade bd-conocimientos-informáticos-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myExtraLargeModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+          <div class="modal-content">
+            <div class="row">
+              <div class="col-md-8 form_alineado">
+                <form>
+                  <div class="form-group row">
+                    <div class="col-md-2 label_alineado">
+                      <label for="identificación" class="col-form-label">Programas informáticos<span class="glyphicon glyphicon-search" aria-hidden="true"></span></label>
+                    </div>
+                    <div class="col-md-6">
+                      <select class="form-control mb-2 mr-sm-2" id="licenciaConducir" class="cm-12" name="DLec">
+                        <option value="0">Selecciona</option>
+                      </select>
+                    </div>
+                    <div class="col-md-4">
+                      <select class="form-control mb-2 mr-sm-2" id="licenciaConducir" class="cm-12" name="DLec">
+                        <option value="0">Nivel</option>
+                        <option value="1">Usuario</option>
+                        <option value="2">Avanzado</option>
+                        <option value="3">Profesional</option>
+                        <option value="4">Experto</option>
+                      </select>
+                    </div>
+                  </div>
+
+                  <div class="form-group row centrar_btn">
+                    <p>
+                      <button type="button" class="btn btn-primary btn-lg">Listo</button>
+                      <button type="button" class="btn btn-default btn-lg">Limpiar</button>
+                    </p>
+                  </div>
+                </form>
+              </div>
+              <!-- col-md-8 -->
+            </div>
+
+          </div>
+        </div>
+      </div>
+      <!-- FIN MODAL CONOCIMIETNOS INFORMATICOS -->
+    </section>
+    <!-- FIN CONOCIMIENTOS INFORMATICOS -->
+
+    <!-- CONOCIMIENTOS Y HABILIDADES -->
+    <section id="CONOCIMIENTOS_Y_HABILIDADES">
+
+      <div class="row">
+        <div class="col">
+          <h2>Conocimientos y habilidades</h2>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-8 form_alineado">
+          <div class="alert alert-danger" role="alert">
+            Agregar conocimientos Y habilidades...
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-8 form_alineado">
+          <button type="button" class="btn btn-primary" data-toggle="modal" data-target=".bd-conocimientos-Y-habilidades-modal-lg">Agregar conocimientos</button>
+        </div>
+      </div>
+      <!-- MODAL CONOCIMIENTOS Y HABILIDADES -->
+      <div class="modal fade bd-conocimientos-Y-habilidades-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myExtraLargeModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+          <div class="modal-content">
+            <div class="row">
+              <div class="col-md-8 form_alineado">
+                <form>
+                  <div class="col-md-12">
+                    <label for="Cargo" class=" col-form-label">Escribí tus conocimientos</label>
+                  </div>
+
+                  <div class="col-md-12">
+                    <textarea type="text" class="form-control" id="apellido" placeholder="" rows="5" cols="10" resize="none"></textarea>
+                    <div class="contador" id="contadordescperfil">
+                      <p>(máximo 500 carácteres)</p>
+                    </div>
+                  </div>
+
+                  <div class="form-group row centrar_btn">
+                    <p>
+                      <button type="button" class="btn btn-primary btn-lg">Listo</button>
+                      <button type="button" class="btn btn-default btn-lg">Limpiar</button>
+                    </p>
+                  </div>
+                </form>
+              </div>
+              <!-- col-md-8 -->
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- FIN MODAL CONOCIMIENTOS Y HABILIDADES -->
+    </section>
+    <!-- FIN CONOCIMIENTOS Y HABILIDADES -->
+
+    <!-- ADJUNTASR CV -->
+    <section id="ADJUNTASR_CV">
+
+      <div class="row">
+        <div class="col">
+          <h2>Adjuntar un CV</h2>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-8 form_alineado">
+          <form>
+            <div class="form-group row">
+              <div class="col-md-3 label_alineado">
+                <label for="nombre" class=" col-form-label">Curriculum Vitae</label>
+              </div>
+              <div class="col-md-9 col-sm-10">
+                <input type="file" class="form-control" id="nombre" placeholder="Dirección">
+              </div>
+            </div>
+            <div class="col-md-10">
+              <button type="button" class="btn btn-primary btn-lg btn-block">Enviar</button>
+            </div>
+          </form>
+        </div>
+        <!-- col-md-8 -->
+      </div>
+    </section>
+    <!-- FIN ADJUNTAR CV -->
+  </div>
+  <!--  FIN CONTAINER FLUID -->
+  <!-- FOOTER -->
+  <footer style="background:#000;margin-top:0px;">
+    <div class="footer-copyright text-center py-3">© 2019 Copyright:
+      <a href="#"> developerwebmj@gmail.com</a>
+    </div>
+  </footer>
+  <!-- FIN FOOTER -->
   </div>
   <!-- FIN MAIN WRAPPER -->
 
